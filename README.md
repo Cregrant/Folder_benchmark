@@ -1,22 +1,23 @@
 # Folder_benchmark
 
-This project will help you estimate a latency and a linear read speed for files in a folder.  
-I made it to compare different NTFS compression algorithms using one folder with test files.  
+This project will help you estimate latency and linear read speed for files in a folder.  
+It was created to compare different NTFS compression algorithms using a single folder with test files.
 
-**Note that your OS probably will cache test files in RAM memory.**
+**Please note that your operating system will likely cache the test files in RAM memory.**
 
 ## Requirements
-Make sure you have installed Java 8.  
-Prepare your test folder with at least 6 identical files (use CTRL+C and CTRL+V).  
-I recommend using a few hundred small files for a latency test.
+Make sure you have Java 8 installed.  
+Prepare a test folder with at least 6 identical files (you can use CTRL+C and CTRL+V).  
+For latency testing, it is recommended to use a few hundred small files.  
 
 ## Usage
-A latency test will be initiated if each file is less than 1 MB. Or a speed test otherwise.  
+If each file is less than 1 MB, a latency test will be initiated. Otherwise, a speed test will be performed.  
+To run the benchmark, use the following command:  
 `java -jar Benchmark.jar <Absolute path to a folder>`
 
 ## Common test sequence
 ### Win
 Clean up any RAM caches using [RAMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/rammap) (Empty -> Empty Standby List)  
-Run benchmark  
+Run the benchmark.  
 
-Repeat previous steps until your results become similar
+Repeat these steps until your results become similar.

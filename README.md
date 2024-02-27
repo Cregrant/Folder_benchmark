@@ -16,7 +16,7 @@ To run the benchmark, use the following command:
 `java -jar Benchmark.jar <Absolute path to a folder>`
 
 ## Common test sequence
-### Win
+### Windows
 Clean up any RAM caches using [RAMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/rammap) (Empty -> Empty Standby List)  
 Run the benchmark.  
 

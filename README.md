@@ -7,7 +7,7 @@ It was created to compare different NTFS compression algorithms using a single f
 
 ## Requirements
 Make sure you have Java 8 installed.  
-Prepare a test folder with at least 6 identical files (you can use CTRL+C and CTRL+V).  
+Prepare a test folder with at least 4 identical files (you can use CTRL+C and CTRL+V).  
 For latency testing, it is recommended to use a few hundred small files.  
 
 ## Usage
@@ -17,7 +17,7 @@ To run the benchmark, use the following command:
 
 ## Common test sequence
 ### Windows
-Clean up any RAM caches using [RAMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/rammap) (Empty -> Empty Standby List)  
+Clean up any RAM caches using [RAMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/rammap) (Empty -> Empty Standby List or run `rammap -Et`)  
 Run the benchmark.  
 
 Repeat these steps until your results become similar.
